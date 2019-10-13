@@ -18,6 +18,7 @@ collections:
   - name: "jobs"
     label: "My Jobs"
     folder: "jobs"
+    create: true
     fields:
       - { label: "title", name: "title", widget: "string" }
       - { label: "location", name: "location", widget: "string" }
