@@ -1,3 +1,20 @@
+publish_mode: editorial_workflow
+
+backend:
+  name: github
+  repo: mariocontext/gridsomeproto
+
+media_folder: "static/images/uploads"
+
+media_library:
+  name: uploadcare
+  config:
+    publicKey: myspecialdemopublickey
+
+site_url: https://app.netlify.com/sites/optimistic-mahavira-3c1b9b/deploys
+
+display_url: https://app.netlify.com/sites/optimistic-mahavira-3c1b9b/deploys
+
 collections:
   - name: "jobs"
     label: "Jobs"
