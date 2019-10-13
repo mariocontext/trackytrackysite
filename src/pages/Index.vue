@@ -22,10 +22,31 @@
         >GitHub</a
       >
     </p>
+    <ul>
+      <li v-for="edge in $page.posts.edges" :key="edge.node.id">
+        <h2>{{ edge.node.title }}</h2>
+        <p>{{ edge.node.excerpt }}</p>
+        <p>{{ edge.node.date }}</p>
+        <div>{{ edge.node.body }}</div>
+      </li>
+    </ul>
   </Layout>
 </template>
 
-
+<page-query>
+query Blog {
+  posts: allPost {
+    edges {
+      node {
+        title
+        excerpt
+        date
+        body
+      }
+    }
+  }
+}
+</page-query>
 
 <script>
 export default {
