@@ -4,6 +4,7 @@ backend:
   name: git-gateway
 
 media_folder: "static/images/uploads"
+public_folder: "/uploads"
 
 media_library:
   name: uploadcare
@@ -15,11 +16,13 @@ site_url: https://app.netlify.com/sites/optimistic-mahavira-3c1b9b/deploys
 display_url: https://app.netlify.com/sites/optimistic-mahavira-3c1b9b/deploys
 
 collections:
-  - name: "jobs"
-    label: "My Jobs"
-    folder: "jobs"
+  - name: "posts"
+    label: "Posts"
+    folder: "posts"
     create: true
+    slug: "{{slug}}"
     fields:
-      - { label: "title", name: "title", widget: "string" }
-      - { label: "location", name: "location", widget: "string" }
-      - { label: "description", name: "description", widget: "markdown" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Excerpt", name: "excerpt", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "date" }
+      - { label: "Body", name: "body", widget: "markdown" }

@@ -8,6 +8,8 @@
   },
   "dependencies": {
     "@gridsome/source-airtable": "^0.1.2",
+    "@gridsome/source-filesystem": "^0.6.1",
+    "@gridsome/transformer-remark": "^0.3.4",
     "gridsome": "^0.7.0",
     "gridsome-plugin-netlify-cms": "^1.0.9",
     "gridsome-source-google-sheets": "^0.3.1",

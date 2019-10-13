@@ -8,6 +8,18 @@ module.exports = {
   siteName: "G Proto App",
   plugins: [
     {
+      use: "@gridsome/source-filesystem",
+      options: {
+        path: "posts/**/*.md",
+        typeName: "Post",
+        remark: {
+          plugins: [
+            // ...local plugins
+          ]
+        }
+      }
+    },
+    {
       use: "gridsome-plugin-tailwindcss",
       options: {
         tailwindConfig: "./tailwind.config.js",
@@ -22,8 +34,19 @@ module.exports = {
     {
       use: `gridsome-plugin-netlify-cms`,
       options: {
-        htmlTitle: `G CMS`
+        htmlTitle: `G CMS`,
+        publicPath: `/admin`
       }
     }
-  ]
+  ],
+  transformers: {
+    remark: {
+      externalLinksTarget: "_blank",
+      externalLinksRel: ["nofollow", "noopener", "noreferrer"],
+      anchorClassName: "icon icon-link",
+      plugins: [
+        // ...global plugins
+      ]
+    }
+  }
 };
