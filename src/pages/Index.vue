@@ -3,7 +3,7 @@
     <!-- Learn how to use images here: https://gridsome.org/docs/images -->
     <g-image alt="Example image" src="~/favicon.png" width="135" />
 
-    <h1 class="text-red-700">Hello, world!</h1>
+    <h1 class="text-red-700">Hello, worldz!!!</h1>
 
     <p class="myspecial-style">
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur
