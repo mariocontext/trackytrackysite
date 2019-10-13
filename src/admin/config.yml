@@ -1,0 +1,9 @@
+collections:
+  - name: "jobs"
+    label: "Jobs"
+    folder: "jobs"
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "title", name: "title", widget: "string" }
+      - { label: "location", name: "location", widget: "string" }
+      - { label: "description", name: "description", widget: "markdown" }
