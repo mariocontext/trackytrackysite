@@ -25,6 +25,19 @@
   </Layout>
 </template>
 
+<page-query>
+query Posts {
+  posts: allWordPressPost {
+    edges {
+      node {
+        id
+        title
+      }
+    }
+  }
+}
+</page-query>
+
 <script>
 export default {
   metaInfo: {
