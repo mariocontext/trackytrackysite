@@ -16,9 +16,8 @@ display_url: https://app.netlify.com/sites/optimistic-mahavira-3c1b9b/deploys
 
 collections:
   - name: "jobs"
-    label: "Jobs"
+    label: "My Jobs"
     folder: "jobs"
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - { label: "title", name: "title", widget: "string" }
       - { label: "location", name: "location", widget: "string" }
