@@ -22,7 +22,8 @@ module.exports = {
     {
       use: `gridsome-plugin-netlify-cms`,
       options: {
-        htmlTitle: `G CMS`
+        htmlTitle: `G CMS`,
+        enableIdentityWidget: true
       }
     }
   ]
