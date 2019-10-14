@@ -7,8 +7,25 @@
       odit fugit assumenda rem dolores inventore iste reprehenderit maxime!
       Iusto.
     </p>
+    <li v-for="edge in $page.jobs.edges" :key="edge.node.id">
+      <h2>{{ edge.node.title }}</h2>
+      <p>{{ edge.node.city }}</p>
+    </li>
   </Layout>
 </template>
+
+<page-query>
+query Jobs {
+  jobs: allJob {
+    edges {
+      node {
+        title
+        city
+      }
+    }
+  }
+}
+</page-query>
 
 <script>
 export default {

@@ -8,6 +8,15 @@ module.exports = {
   siteName: "G Proto App",
   plugins: [
     {
+      use: "@gridsome/source-airtable",
+      options: {
+        apiKey: "keyPlFLN1JpGiQb7h", // required
+        baseId: "app7kH1C7c6dP2tRv", // required
+        tableName: "job_listing_table", // required
+        typeName: "Job" // required
+      }
+    },
+    {
       use: "@gridsome/source-filesystem",
       options: {
         path: "posts/**/*.md",
@@ -37,7 +46,8 @@ module.exports = {
         htmlTitle: `G CMS`,
         publicPath: `/admin`
       }
-    }
+    },
+    { use: "gridsome-plugin-netlify-cms-paths" }
   ],
   transformers: {
     remark: {
