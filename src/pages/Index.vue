@@ -27,7 +27,6 @@
         <h2>{{ edge.node.title }}</h2>
         <p>{{ edge.node.excerpt }}</p>
         <p>{{ edge.node.date }}</p>
-        <div>{{ edge.node.body }}</div>
       </li>
     </ul>
   </Layout>
@@ -41,7 +40,6 @@ query Blog {
         title
         excerpt
         date
-        body
       }
     }
   }
