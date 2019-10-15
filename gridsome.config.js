@@ -13,14 +13,14 @@ module.exports = {
         apiKey: "keyPlFLN1JpGiQb7h", // required
         baseId: "app7kH1C7c6dP2tRv", // required
         tableName: "job_listing_table", // required
-        typeName: "Job" // required
+        typeName: "Jobs" // required
       }
     },
     {
       use: "@gridsome/source-filesystem",
       options: {
         path: "posts/**/*.md",
-        typeName: "Post",
+        typeName: "Posts",
         remark: {
           plugins: [
             // ...local plugins

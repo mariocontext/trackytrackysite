@@ -10,17 +10,21 @@
     <li v-for="edge in $page.jobs.edges" :key="edge.node.id">
       <h2>{{ edge.node.title }}</h2>
       <p>{{ edge.node.city }}</p>
+      <p>{{ edge.node.remoteOk }}</p>
+      <p>{{ edge.node.notes }}</p>
     </li>
   </Layout>
 </template>
 
 <page-query>
 query Jobs {
-  jobs: allJob {
+  jobs: allJobs {
     edges {
       node {
         title
         city
+        remoteOk
+        notes
       }
     }
   }
