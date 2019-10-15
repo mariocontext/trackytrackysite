@@ -27,7 +27,7 @@
         <h2>{{ edge.node.title }}</h2>
         <p>{{ edge.node.excerpt }}</p>
         <p>{{ edge.node.date }}</p>
-        <p>{{ edge.node.body }}</p>
+        <div v-html="edge.node.content"></div>
       </li>
     </ul>
   </Layout>
@@ -38,9 +38,11 @@ query Blog {
   posts: allPosts {
     edges {
       node {
+        id
         title
         excerpt
         date
+        content
       }
     }
   }
