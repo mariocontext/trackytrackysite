@@ -1,7 +1,14 @@
 module.exports = {
   theme: {
-    extend: {}
+    extend: {
+      colors: {
+        primary: "#ff0000",
+        secondary: "#CCCCCC"
+      }
+    }
   },
-  variants: {},
-  plugins: []
-}
+  variants: {
+    opacity: ["responsive", "hover"]
+  },
+  plugins: [require("autoprefixer")]
+};
