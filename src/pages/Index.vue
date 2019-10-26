@@ -1,11 +1,8 @@
 <template>
   <Layout>
-    <!-- Learn how to use images here: https://gridsome.org/docs/images -->
-    <g-image alt="Example image" src="~/favicon.png" width="135" />
+    <h1>Main Content Page</h1>
 
-    <h1 class="text-orange-700">Hello, worldz!!!</h1>
-
-    <p class="text-primary">
+    <p>
       Lorem ipsum dolor sit amet, consectetur adipisicing elit.
     </p>
 
@@ -13,44 +10,8 @@
       Pariatur excepturi labore tempore expedita, et iste tenetur suscipit
       explicabo! Dolores, aperiam non officia eos quod asperiores
     </p>
-
-    <p class="home-links">
-      <a href="https://gridsome.org/docs/" target="_blank" rel="noopener"
-        >Gridsome Docs</a
-      >
-      <a
-        href="https://github.com/gridsome/gridsome"
-        target="_blank"
-        rel="noopener"
-        >GitHub</a
-      >
-    </p>
-    <ul>
-      <li v-for="edge in $page.posts.edges" :key="edge.node.id">
-        <h2>{{ edge.node.title }}</h2>
-        <p>{{ edge.node.excerpt }}</p>
-        <p>{{ edge.node.date }}</p>
-        <div v-html="edge.node.content"></div>
-      </li>
-    </ul>
   </Layout>
 </template>
-
-<page-query>
-query Blog {
-  posts: allPosts {
-    edges {
-      node {
-        id
-        title
-        excerpt
-        date
-        content
-      }
-    }
-  }
-}
-</page-query>
 
 <script>
 export default {
@@ -62,7 +23,4 @@ export default {
 
 
 <style>
-.home-links a {
-  margin-right: 1rem;
-}
 </style>
