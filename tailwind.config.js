@@ -19,16 +19,16 @@ module.exports = {
   },
   plugins: [
     require("autoprefixer"),
-    function({ addComponents }) {
-      const buttons = {
-        button: {
+    function({ addUtilities }) {
+      const newUtilities = {
+        ".sketchy-1": {
           borderBottomLeftRadius: "15px 255px",
           borderBottomRightRadius: "225px 15px",
           borderTopLeftRadius: "255px 15px",
           borderTopRightRadius: "15px 225px"
         }
       };
-      addComponents(buttons);
+      addUtilities(newUtilities, ["responsive", "hover"]);
     },
     function({ addBase, config }) {
       addBase({
