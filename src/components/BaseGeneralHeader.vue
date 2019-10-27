@@ -1,7 +1,7 @@
 <template>
   <span class="general-header-container">
     <header
-      class="sticky top-0 flex justify-between items-center p-4 bg-gray-500"
+      class="sticky top-0 flex justify-between items-center p-4 border border-gray-600 border-b-2"
     >
       <!--
         We may want the header to disappear when content is scrolled down and reappear when scrolled up
@@ -9,13 +9,13 @@
       <span>
         <i
           v-on:click="showdrawer = !showdrawer"
-          class="text-4xl material-icons text-white cursor-pointer"
+          class="text-4xl material-icons cursor-pointer"
           >menu</i
         >
       </span>
 
       <span>
-        <h1 class="text-xl pl-2 text-white font-normal">
+        <h1 class="text-xl pl-2 font-normal">
           <slot name="header-title">title goes here</slot>
         </h1>
       </span>
@@ -74,7 +74,7 @@
 <style>
 /* In Component Styles */
 .in-component-navbar-links {
-  @apply text-black font-semibold no-underline py-4;
+  @apply font-semibold no-underline py-4;
 }
 .in-component-navbar-links:hover {
   @apply text-secondary;

@@ -1,9 +1,9 @@
 <template>
   <div class="font-body">
     <general-header />
-    <div class="p-4 container" role="main">
+    <main class="p-4 container" role="main">
       <slot />
-    </div>
+    </main>
     <general-footer />
   </div>
 </template>
