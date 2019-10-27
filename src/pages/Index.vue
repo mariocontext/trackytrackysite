@@ -5,7 +5,7 @@
     <p class="text-primary">
       Lorem ipsum dolor sit amet, consectetur adipisicing elit.
     </p>
-    <button>I'm a button</button>
+    <button class="btn-blue">I'm a button</button>
 
     <p class="text-secondary">
       Pariatur excepturi labore tempore expedita, et iste tenetur suscipit

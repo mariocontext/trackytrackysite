@@ -17,5 +17,18 @@ module.exports = {
   variants: {
     opacity: ["responsive", "hover"]
   },
-  plugins: [require("autoprefixer")]
+  plugins: [
+    require("autoprefixer"),
+    function({ addComponents }) {
+      const buttons = {
+        button: {
+          borderBottomLeftRadius: "15px 255px",
+          borderBottomRightRadius: "225px 15px",
+          borderTopLeftRadius: "255px 15px",
+          borderTopRightRadius: "15px 225px"
+        }
+      };
+      addComponents(buttons);
+    }
+  ]
 };
