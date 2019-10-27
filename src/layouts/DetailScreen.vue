@@ -1,8 +1,8 @@
 <template>
-  <div class="container mx-auto px-4 max-w-6xl">
+  <div>
     <general-header />
     <general-sidebar />
-    <div role="main">
+    <div class="p-4 container" role="main">
       <slot />
     </div>
     <general-footer />

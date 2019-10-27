@@ -1,6 +1,6 @@
 <template>
-  <div class="container mx-auto px-4 max-w-6xl">
-    <div role="main">
+  <div>
+    <div class="p-4 container" role="main">
       <slot />
     </div>
   </div>
