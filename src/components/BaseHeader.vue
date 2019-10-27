@@ -1,7 +1,7 @@
 <template>
   <span class="general-header-container">
     <header
-      class="sticky top-0 flex justify-between items-center p-4 border border-gray-600 border-b-2"
+      class="sticky top-0 flex justify-between items-center p-4 border bg-white border-gray-600 border-b-2"
     >
       <!--
         We may want the header to disappear when content is scrolled down and reappear when scrolled up
@@ -22,7 +22,7 @@
       <span v-bind:class="[contextTriggerIsActive ? 'visible' : 'invisible']">
         <i
           v-on:click="showcontextmenu = !showcontextmenu"
-          class="material-icons text-white cursor-pointer"
+          class="material-icons cursor-pointer"
           >more_vert</i
         >
       </span>
@@ -60,7 +60,7 @@
     <transition name="dropin">
       <div
         v-show="showcontextmenu"
-        class="contextmenu absolute pin-r pin-t h-auto w-48 bg-grey-lightest mt-12 mr-12 p-4 flex flex-col items-start shadow-lg z-20"
+        class="contextmenu fixed right-0 top-0 h-auto w-48 bg-white mt-12 mr-2 p-4 flex flex-col items-start shadow-lg z-20"
       >
         <a href="#" class="in-component-context-menu-links">Sort by Date</a>
         <a href="#" class="no-underline text-black p-4">Sort by Type</a>
@@ -109,13 +109,11 @@
 
 <script>
 export default {
-  props: {
-    contextTriggerIsActive: Boolean
-  },
   data() {
     return {
       showdrawer: false,
-      showcontextmenu: false
+      showcontextmenu: false,
+      contextTriggerIsActive: true
     };
   }
 };

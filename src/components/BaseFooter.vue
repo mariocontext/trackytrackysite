@@ -1,5 +1,7 @@
 <template>
-  <footer class="w-full fixed bottom-0 p-4 border border-gray-600 border-t-2">
+  <footer
+    class="w-full fixed bottom-0 border border-gray-600 border-t-2 bg-white z-10 xl:hidden "
+  >
     <div class="nav-listing flex flex-row justify-around w-full">
       <g-link to="/about" class="in-component-navbar-links">
         <span class="material-icons in-component-navbar-icons">stars</span>
