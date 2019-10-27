@@ -16,7 +16,7 @@
 
       <span>
         <h1 class="text-xl pl-2 font-normal">
-          <slot name="header-title">title goes here</slot>
+          Some title
         </h1>
       </span>
       <span v-bind:class="[contextTriggerIsActive ? 'visible' : 'invisible']">

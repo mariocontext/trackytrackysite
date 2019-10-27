@@ -1,6 +1,6 @@
 <template>
   <div class="font-body">
-    <general-styles />
+    <BaseStyles />
     <main class="p-4 container" role="main">
       <slot />
     </main>
@@ -8,13 +8,6 @@
 </template>
 
 <script>
-import GeneralStyles from "../components/BaseGeneralStyles.vue";
-
-export default {
-  components: {
-    GeneralStyles
-  }
-};
 </script>
 
 <style>
