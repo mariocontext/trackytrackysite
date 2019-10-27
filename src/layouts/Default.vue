@@ -24,7 +24,4 @@ export default {
 </script>
 
 <style>
-button {
-  @apply border border-gray-800 p-4 sketchy-1;
-}
 </style>

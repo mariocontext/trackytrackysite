@@ -2,10 +2,6 @@ const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
   theme: {
-    fontFamily: {
-      display: ['"Neucha"', "sans-serif"],
-      body: ['"Neucha"', "sans-serif"]
-    },
     extend: {
       colors: {
         primary: "#ff0000",
@@ -29,13 +25,6 @@ module.exports = {
         }
       };
       addUtilities(newUtilities, ["responsive", "hover"]);
-    },
-    function({ addBase, config }) {
-      addBase({
-        h1: { fontSize: config("theme.fontSize.2xl") },
-        h2: { fontSize: config("theme.fontSize.xl") },
-        h3: { fontSize: config("theme.fontSize.lg") }
-      });
     }
   ]
 };
