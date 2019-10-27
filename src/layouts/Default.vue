@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="font-body">
     <general-header />
     <div class="p-4 container" role="main">
       <slot />
@@ -21,4 +21,7 @@ export default {
 </script>
 
 <style>
+button {
+  @apply border border-gray-800 p-4;
+}
 </style>

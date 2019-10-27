@@ -14,4 +14,8 @@ export default function(Vue, { router, head, isClient }) {
     rel: "stylesheet",
     href: "https://fonts.googleapis.com/icon?family=Material+Icons"
   });
+  head.link.push({
+    rel: "stylesheet",
+    href: "https://fonts.googleapis.com/css?family=Neucha&display=swap"
+  });
 }

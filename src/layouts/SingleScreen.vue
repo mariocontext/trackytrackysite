@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="font-body">
     <div class="p-4 container" role="main">
       <slot />
     </div>

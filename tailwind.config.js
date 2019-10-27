@@ -1,5 +1,11 @@
+const defaultTheme = require("tailwindcss/defaultTheme");
+
 module.exports = {
   theme: {
+    fontFamily: {
+      display: ['"Neucha"', "sans-serif"],
+      body: ['"Neucha"', "sans-serif"]
+    },
     extend: {
       colors: {
         primary: "#ff0000",
