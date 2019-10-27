@@ -33,11 +33,12 @@
         class="general-nav-drawer min-h-screen bg-white shadow-lg w-64 z-10 fixed inline-block p-4"
       >
         <g-link to="/" class="no-underline">
-          Some logo
+          <g-image
+            src="https://via.placeholder.com/150.png?text=Logo"
+            width="150"
+          />
         </g-link>
-        <div
-          class="nav-listing flex flex-col flex-start border-t-2 pt-4 w-full"
-        >
+        <div class="nav-listing flex flex-col flex-start pt-4 w-full">
           <g-link to="/about" class="in-component-navbar-links">
             <span class="material-icons in-component-navbar-icons">stars</span>
             About
