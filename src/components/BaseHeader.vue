@@ -14,11 +14,6 @@
         >
       </span>
 
-      <span>
-        <h1 class="text-xl pl-2 font-normal">
-          Some title
-        </h1>
-      </span>
       <span v-bind:class="[contextTriggerIsActive ? 'visible' : 'invisible']">
         <i
           v-on:click="showcontextmenu = !showcontextmenu"
