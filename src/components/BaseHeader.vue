@@ -9,8 +9,8 @@
       <span>
         <i
           v-on:click="showdrawer = !showdrawer"
-          class="text-4xl material-icons cursor-pointer"
-          >menu</i
+          class="material-icons cursor-pointer"
+          ><span class="text-4xl">menu</span></i
         >
       </span>
 
@@ -23,7 +23,7 @@
         <i
           v-on:click="showcontextmenu = !showcontextmenu"
           class="material-icons cursor-pointer"
-          >more_vert</i
+          ><span class="text-4xl">more_vert</span></i
         >
       </span>
     </header>
