@@ -14,6 +14,12 @@
         >
       </span>
 
+      <span>
+        <h1 class="text-xl pl-2 font-normal">
+          {{ screenTitle }}
+        </h1>
+      </span>
+
       <span v-bind:class="[contextTriggerIsActive ? 'visible' : 'invisible']">
         <i
           v-on:click="showcontextmenu = !showcontextmenu"
@@ -45,10 +51,20 @@
             FAQ
           </g-link>
           <g-link to="/sections/sectionone" class="in-component-navbar-links">
-            <span class="material-icons in-component-navbar-icons"
-              >settings</span
-            >
+            <span class="material-icons in-component-navbar-icons">stars</span>
             Section One
+          </g-link>
+          <g-link to="/sections/section-two" class="in-component-navbar-links">
+            <span class="material-icons in-component-navbar-icons">stars</span>
+            Section One
+          </g-link>
+          <g-link to="/sections/sectionone" class="in-component-navbar-links">
+            <span class="material-icons in-component-navbar-icons">star</span>
+            Detail Test
+          </g-link>
+          <g-link to="/intro" class="in-component-navbar-links">
+            <span class="material-icons in-component-navbar-icons">star</span>
+            Intro
           </g-link>
         </div>
       </span>
@@ -105,6 +121,7 @@
 
 <script>
 export default {
+  props: ["screenTitle"],
   data() {
     return {
       showdrawer: false,

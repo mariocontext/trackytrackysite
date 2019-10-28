@@ -1,10 +1,9 @@
 <template>
   <div class="font-body">
     <BaseStyles />
-    <BaseHeader />
-    <main class="p-4 container mb-32" role="main">
+    <div>
       <slot />
-    </main>
+    </div>
     <BaseFooter />
   </div>
 </template>
