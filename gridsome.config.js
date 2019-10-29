@@ -12,8 +12,8 @@ module.exports = {
       options: {
         apiKey: "keyPlFLN1JpGiQb7h", // required
         baseId: "app7kH1C7c6dP2tRv", // required
-        tableName: "job_listing_table", // required
-        typeName: "Jobs" // required
+        tableName: "proto_listing_table", // required
+        typeName: "Listings" // required
       }
     },
     {

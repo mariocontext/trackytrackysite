@@ -17,7 +17,30 @@ h2 {
 h3 {
   @apply text-xl;
 }
-button {
-  @apply border border-gray-800 p-4 sketchy-1;
+
+h4 {
+  @apply text-lg;
+}
+
+h5 {
+  @apply text-base font-semibold;
+}
+
+h6 {
+  @apply text-sm font-semibold;
+}
+
+input {
+  @apply sketchy-2;
+}
+
+button,
+.btn {
+  @apply border border-gray-800 p-4 sketchy-1 inline-block;
+}
+
+button:hover,
+.btn:hover {
+  @apply shadow;
 }
 </style>

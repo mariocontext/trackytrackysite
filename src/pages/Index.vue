@@ -2,17 +2,11 @@
   <Layout>
     <BaseHeader screenTitle="Welcome" />
     <main class="p-4 mb-32" role="main">
-      <h1>Main Content Page</h1>
-
+      <h1>Prototyping Links</h1>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        This is the main page which leads to various prototyping paths.
       </p>
-      <button>I'm a button</button>
-
-      <p>
-        Pariatur excepturi labore tempore expedita, et iste tenetur suscipit
-        explicabo! Dolores, aperiam non officia eos quod asperiores
-      </p>
+      <g-link to="/homescreen" class="btn">Homescreen</g-link>
     </main>
   </Layout>
 </template>
