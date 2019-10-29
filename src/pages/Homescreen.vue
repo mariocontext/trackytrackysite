@@ -56,7 +56,7 @@
           <li
             class="bg-gray-200 my-4 p-4 inline-block"
             v-for="edge in $page.listings.edges"
-            :key="edge.node.thingID"
+            :key="edge.node.thingid"
           >
             <h2>{{ edge.node.title }}</h2>
             <p>{{ edge.node.status }}</p>
@@ -72,10 +72,10 @@
 
 <page-query>
 query Listings {
-  listings: allListings (sortBy: "title", order: ASC) {
+  listings: allListings (sortBy: "Thingid", order: ASC) {
     edges {
       node {
-        thingId
+        thingid
         title
         status
         cart
