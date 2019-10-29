@@ -4,17 +4,12 @@
     <main class="p-4 mt-8 mb-32 container mx-auto" role="main">
       <header>
         <h1 class="sr-only">Category Listing</h1>
-        <g-image
-          class="mx-auto"
-          src="https://via.placeholder.com/1024x400.png?text=Some+Hero+Image"
-          width="1024"
-        />
       </header>
       <section class="mt-8">
-        <h2>Category Listing</h2>
+        <h2 class="sr-only">Category Listing</h2>
         <ul class="flex flex-col flex-wrap md:flex-row md:items-stretch">
           <li
-            class="bg-gray-200 m-4  p-4 inline-block md:w-64"
+            class="bg-gray-200 mt-4 mr-8 mb-4 p-4 inline-block  md:w-64"
             v-for="edge in $page.listings.edges"
             :key="edge.node.thingID"
           >
