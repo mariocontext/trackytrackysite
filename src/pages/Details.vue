@@ -16,6 +16,8 @@
             <p>{{ edge.node.status }}</p>
             <p>{{ edge.node.cart }}</p>
             <p>{{ edge.node.summary }}</p>
+            <p>{{ edge.node.location }}</p>
+            <p>{{ edge.node.ratings }}</p>
           </li>
         </ul>
       </section>
@@ -33,6 +35,8 @@
           status
           cart
           summary
+          location
+          ratings
         }
       }
     }
