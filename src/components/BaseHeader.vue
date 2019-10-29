@@ -66,6 +66,10 @@
             <span class="material-icons in-component-navbar-icons">star</span>
             Intro
           </g-link>
+          <g-link to="/blog/blog" class="in-component-navbar-links">
+            <span class="material-icons in-component-navbar-icons">star</span>
+            Blog
+          </g-link>
         </div>
       </span>
     </transition>
