@@ -56,7 +56,7 @@
   @apply flex flex-row justify-between;
 }
 .single-signon li {
-  @apply w-20 bg-gray-500 py-8 text-xs text-center;
+  @apply w-20 bg-gray-500 py-8 text-xs text-center rounded-full;
 }
 </style>
 

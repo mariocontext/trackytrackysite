@@ -9,21 +9,20 @@
               Password Reset
             </h2>
             <p class="max-w-xs">
-              After entering your email address, you'll get an email with a link
-              to reset your password
+              Enter a strong password (minimum 8 characters, uppercase,
+              lowercase, and at least one number and special characters like
+              #,!,%) Or use a Password manager like
+              <a href="https://1password.com/" target="_blank">1Password </a> to
+              generate and track your passwords.
             </p>
             <form action="">
-              <label for="email"
+              <label for="password"
                 ><span class="block">Email</span>
-                <input type="email" name="email" class="w-64" />
+                <input type="password" name="password" class="w-64" />
               </label>
 
-              <g-link class="btn my-4" to="/actual-reset">Start Reset</g-link>
+              <g-link class="btn my-4" to="/login">Reset Password</g-link>
             </form>
-
-            <g-link class="block my-4" to="/login"
-              >Go back to Login page</g-link
-            >
           </div>
         </form>
       </section>
