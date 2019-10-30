@@ -3,7 +3,7 @@
     <div
       class="bg-gray-200 p-8 max-w-xl mx-auto md:mt-16 flex flex-col items-center"
     >
-      <h1 class="text-center">Welcome</h1>
+      <h1 class="text-center">Brand Logo</h1>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error
         doloremque omnis animi, eligendi magni a voluptatum, vitae, consequuntur
