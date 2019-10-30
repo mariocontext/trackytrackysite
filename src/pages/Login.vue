@@ -26,7 +26,7 @@
             Regular Login
           </h2>
           <div class="sm:w-1/2 mx-auto">
-            <label for="username"
+            <label for="email"
               ><span class="block">Email</span>
               <input type="email" name="email" class="w-64" />
             </label>
