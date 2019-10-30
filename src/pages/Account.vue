@@ -1,18 +1,28 @@
 <template>
   <Layout>
     <BaseHeader screenTitle="Account" />
-    <main class="p-8 mb-32" role="main">
+    <main class="p-8 mb-32 container md:mx-auto" role="main">
       <h1>Account</h1>
       <h2>Profile</h2>
-      <div class="w-20 bg-gray-500 py-8 text-xs text-center rounded-full">
-        Avatar
-      </div>
+      <g-image
+        class="rounded-full"
+        src="https://via.placeholder.com/150x150.png?text=Avatar"
+        width="150"
+      />
       <section>
         <form action="#">
           <h2 class="mt-8">
             Basic Info
           </h2>
           <div>
+            <label for="pronoun"
+              ><span class="block">Preferred Pronoun</span>
+              <select name="pronoun" class="w-64">
+                <option value="they_them">They/Them</option>
+                <option value="he_him">He/Him</option>
+                <option value="she_her">She/Her</option>
+              </select>
+            </label>
             <label for="first_name"
               ><span class="block">First name</span>
               <input type="text" name="first_name" class="w-64" />
@@ -30,7 +40,7 @@
               <input type="password" name="pass" class="w-64" />
             </label>
 
-            <g-link to="/" class="btn">Save</g-link>
+            <g-link to="/" class="btn mt-4">Save</g-link>
           </div>
         </form>
       </section>

@@ -9,13 +9,28 @@
         <div>
           <ul class="single-signon md:w-64 md:mx-auto">
             <li>
-              Google
+              <g-image
+                class="rounded-full"
+                src="https://via.placeholder.com/75x75.png?text=Google"
+                width="75"
+                alt="Sign/Register with Google"
+              />
             </li>
             <li class="">
-              Twitter
+              <g-image
+                class="rounded-full"
+                src="https://via.placeholder.com/75x75.png?text=Twitter"
+                width="75"
+                alt="Sign/Register with Twitter"
+              />
             </li>
             <li>
-              Github
+              <g-image
+                class="rounded-full"
+                src="https://via.placeholder.com/75x75.png?text=Github"
+                width="75"
+                alt="Sign/Register with Github"
+              />
             </li>
           </ul>
         </div>
@@ -26,6 +41,22 @@
             Create an Account
           </h2>
           <div class="sm:w-1/2 mx-auto">
+            <label for="pronoun"
+              ><span class="block">Preferred Pronoun</span>
+              <select name="pronoun" class="w-64">
+                <option value="they_them">They/Them</option>
+                <option value="he_him">He/Him</option>
+                <option value="she_her">She/Her</option>
+              </select>
+            </label>
+            <label for="first_name"
+              ><span class="block">First name</span>
+              <input type="text" name="first_name" class="w-64" />
+            </label>
+            <label for="last_name"
+              ><span class="block">Last name</span>
+              <input type="text" name="last_name" class="w-64" />
+            </label>
             <label for="email"
               ><span class="block">Email</span>
               <input type="email" name="email" class="w-64" />
@@ -56,7 +87,7 @@
   @apply flex flex-row justify-between;
 }
 .single-signon li {
-  @apply w-20 bg-gray-500 py-8 text-xs text-center rounded-full;
+  @apply rounded-full;
 }
 </style>
 
