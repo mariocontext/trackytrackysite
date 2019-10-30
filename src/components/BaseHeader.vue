@@ -68,6 +68,10 @@
             <span class="material-icons in-component-navbar-icons">star</span>
             Blog
           </g-link>
+          <g-link to="/reference/style-ref/" class="in-component-navbar-links">
+            <span class="material-icons in-component-navbar-icons">star</span>
+            Style Reference
+          </g-link>
         </div>
       </span>
     </transition>
