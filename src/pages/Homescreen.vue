@@ -50,7 +50,9 @@
 
       <section class="mt-8">
         <h2>Category Three</h2>
-        <ul class="flex flex-col flex-wrap md:flex-row md:items-stretch">
+        <ul
+          class="flex flex-col flex-wrap md:flex-row md:justify-between md:items-stretch"
+        >
           <li
             class="bg-gray-200 m-4  p-4 inline-block md:w-64"
             v-for="edge in $page.listings.edges"

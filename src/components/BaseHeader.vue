@@ -44,6 +44,10 @@
             <span class="material-icons in-component-navbar-icons">star</span>
             Proto Paths
           </g-link>
+          <g-link to="/intro" class="in-component-navbar-links">
+            <span class="material-icons in-component-navbar-icons">star</span>
+            Intro
+          </g-link>
           <g-link to="/homescreen" class="in-component-navbar-links">
             <span class="material-icons in-component-navbar-icons">star</span>
             Homescreen
@@ -59,10 +63,6 @@
           <g-link to="/informational" class="in-component-navbar-links">
             <span class="material-icons in-component-navbar-icons">star</span>
             Informational
-          </g-link>
-          <g-link to="/intro" class="in-component-navbar-links">
-            <span class="material-icons in-component-navbar-icons">star</span>
-            Intro
           </g-link>
           <g-link to="/blog/blog" class="in-component-navbar-links">
             <span class="material-icons in-component-navbar-icons">star</span>
