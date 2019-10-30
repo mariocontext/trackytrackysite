@@ -41,26 +41,24 @@
         </g-link>
         <div class="nav-listing flex flex-col flex-start pt-4 w-full">
           <g-link to="/" class="in-component-navbar-links">
-            <span class="material-icons in-component-navbar-icons">stars</span>
+            <span class="material-icons in-component-navbar-icons">star</span>
             Proto Paths
           </g-link>
           <g-link to="/homescreen" class="in-component-navbar-links">
-            <span class="material-icons in-component-navbar-icons"
-              >access_time</span
-            >
+            <span class="material-icons in-component-navbar-icons">star</span>
             Homescreen
           </g-link>
           <g-link to="/category-list" class="in-component-navbar-links">
-            <span class="material-icons in-component-navbar-icons">stars</span>
+            <span class="material-icons in-component-navbar-icons">star</span>
             Category List
           </g-link>
           <g-link to="/details" class="in-component-navbar-links">
-            <span class="material-icons in-component-navbar-icons">stars</span>
+            <span class="material-icons in-component-navbar-icons">star</span>
             Detail
           </g-link>
-          <g-link to="/sections/sectionone" class="in-component-navbar-links">
+          <g-link to="/informational" class="in-component-navbar-links">
             <span class="material-icons in-component-navbar-icons">star</span>
-            Detail Test
+            Informational
           </g-link>
           <g-link to="/intro" class="in-component-navbar-links">
             <span class="material-icons in-component-navbar-icons">star</span>
