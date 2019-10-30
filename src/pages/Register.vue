@@ -4,7 +4,7 @@
       <h1 class="text-center py-4">Brand Logo</h1>
       <section>
         <h2 class="text-center py-4">
-          Sign in / Register
+          Register
         </h2>
         <div>
           <ul class="single-signon md:w-64 md:mx-auto">
@@ -23,7 +23,7 @@
       <section class="mx-auto">
         <form action="#">
           <h2 class="mt-8 text-center">
-            Regular Login
+            Create an Account
           </h2>
           <div class="sm:w-1/2 mx-auto">
             <label for="username"
@@ -34,15 +34,15 @@
               ><span class="block">Password</span>
               <input type="password" name="pass" class="w-64" />
             </label>
-            <g-link class="mt-2 block" to="/pass-reset">
-              Reset Password
-            </g-link>
 
             <g-link class="btn mt-4 block" to="/homescreen">
-              Login
+              Create Account
             </g-link>
-            <g-link class="mt-4 block" to="/register">
-              Not registered? Register here
+            <g-link class="mt-8 block" to="/pass-reset">
+              Forgot your Password? Reset it here
+            </g-link>
+            <g-link class="mt-4 block" to="/login">
+              Already have an account? Login here
             </g-link>
           </div>
         </form>
@@ -63,7 +63,7 @@
 <script>
 export default {
   metaInfo: {
-    title: "Login"
+    title: "Register"
   }
 };
 </script>

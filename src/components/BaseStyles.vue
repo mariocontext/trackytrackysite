@@ -33,7 +33,7 @@ h6 {
 }
 
 label {
-  @apply block mt-8 mb-2 font-semibold;
+  @apply block mt-4 mb-2 font-semibold;
 }
 
 a,

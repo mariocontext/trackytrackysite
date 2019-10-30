@@ -31,7 +31,7 @@
     <transition name="slide">
       <span
         v-show="showdrawer"
-        class="general-nav-drawer min-h-screen bg-white shadow-lg w-64 z-10 fixed inline-block p-4"
+        class="general-nav-drawer min-h-screen bg-white shadow-lg w-64 z-10 fixed inline-block p-4 overflow-auto scrolling-touch md:scrolling-auto"
       >
         <g-link to="/" class="no-underline">
           <g-image
@@ -47,6 +47,10 @@
           <g-link to="/intro" class="in-component-navbar-links">
             <span class="material-icons in-component-navbar-icons">star</span>
             Intro
+          </g-link>
+          <g-link to="/login" class="in-component-navbar-links">
+            <span class="material-icons in-component-navbar-icons">star</span>
+            Login
           </g-link>
           <g-link to="/homescreen" class="in-component-navbar-links">
             <span class="material-icons in-component-navbar-icons">star</span>

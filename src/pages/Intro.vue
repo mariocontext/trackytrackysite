@@ -18,7 +18,7 @@
       <g-link class="btn" to="/homescreen">
         Next
       </g-link>
-      <g-link class="text-sm my-16 block uppercase" to="/homescreen">
+      <g-link class="text-sm my-16 block uppercase" to="/login">
         Skip
       </g-link>
     </div>
