@@ -51,10 +51,10 @@
       <section class="mt-8">
         <h2>Category Three</h2>
         <ul
-          class="flex flex-col flex-wrap md:flex-row md:justify-between md:items-stretch"
+          class="flex flex-col md:flex-row md:items-stretch md:justify-around"
         >
           <li
-            class="bg-gray-200 m-4  p-4 inline-block md:w-64"
+            class="bg-gray-200 my-4 p-4 inline-block"
             v-for="edge in $page.listings.edges"
             :key="edge.node.thingid"
           >

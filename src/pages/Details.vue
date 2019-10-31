@@ -3,7 +3,7 @@
     <BaseHeader screenTitle="Details" />
     <main class="p-4 mt-8 mb-32 container mx-auto" role="main">
       <header>
-        <h1 class="sr-only">Details</h1>
+        <h1>Item Detail</h1>
       </header>
       <section class="mt-8">
         <h2>Information</h2>
