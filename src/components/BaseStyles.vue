@@ -8,6 +8,9 @@ body {
   font-family: Neucha, sans-serif;
 }
 
+p {
+  @apply leading-relaxed mb-4;
+}
 h1 {
   @apply text-4xl py-2;
 }
