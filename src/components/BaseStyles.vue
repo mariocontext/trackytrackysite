@@ -39,8 +39,8 @@ label {
   @apply block mt-4 mb-2 font-semibold;
 }
 
-a,
-a:link {
+main a,
+main a:link {
   @apply underline;
 }
 a:hover {
