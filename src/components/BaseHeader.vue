@@ -31,7 +31,7 @@
     <transition name="slide">
       <span
         v-show="showdrawer"
-        class="general-nav-drawer min-h-screen bg-white shadow-lg w-64 z-10 fixed inline-block p-4 overflow-auto scrolling-touch md:scrolling-auto"
+        class="general-nav-drawer min-h-screen bg-white shadow-lg w-64 z-10 fixed inline-block h-full mb-32 p-4 overflow-y-auto"
       >
         <g-link to="/" class="no-underline">
           <g-image
@@ -39,7 +39,7 @@
             width="150"
           />
         </g-link>
-        <div class="nav-listing flex flex-col flex-start pt-4 w-full">
+        <div class="nav-listing flex flex-col flex-start pt-4 h-full">
           <g-link to="/" class="in-component-navbar-links">
             <span class="material-icons in-component-navbar-icons">star</span>
             Proto Paths
