@@ -21,12 +21,12 @@
       </span>
 
       <span class="header-actions">
-        <span class="inline-block">
-          <g-link to="/account">
-            <i class="material-icons cursor-pointer">
-              <span class="text-4xl mr-4">account_circle</span></i
-            >
-          </g-link>
+        <span class="inline-block pr-4">
+          <i
+            v-on:click="showaccountmenu = !showaccountmenu"
+            class="material-icons cursor-pointer"
+            ><span class="text-4xl">account_circle</span></i
+          >
         </span>
 
         <span v-bind:class="[contextTriggerIsActive ? 'visible' : 'invisible']">
@@ -101,6 +101,16 @@
         <a href="#" class="no-underline text-black p-4">Contextual Link 1</a>
       </div>
     </transition>
+    <transition name="dropin">
+      <div
+        v-show="showaccountmenu"
+        class="accountmenu fixed right-0 top-0 h-auto w-48 bg-white mt-12 mr-2 p-4 flex flex-col items-start shadow-lg z-20"
+      >
+        <g-link to="/account">Account</g-link>
+        <g-link to="/settings">Settings</g-link>
+        <g-link to="/login">Logout</g-link>
+      </div>
+    </transition>
   </span>
 </template>
 
@@ -137,6 +147,10 @@
   transform: translateY(-400px);
   opacity: 0;
 }
+
+.accountmenu > a {
+  @apply no-underline text-black p-4;
+}
 </style>
 
 
@@ -147,6 +161,7 @@ export default {
     return {
       showdrawer: false,
       showcontextmenu: false,
+      showaccountmenu: false,
       contextTriggerIsActive: true
     };
   }
