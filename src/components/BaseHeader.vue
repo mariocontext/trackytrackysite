@@ -39,7 +39,7 @@
             width="150"
           />
         </g-link>
-        <div class="nav-listing flex flex-col flex-start pt-4 h-full">
+        <div class="nav-listing flex flex-col flex-start pt-4 mb-32 h-full">
           <g-link to="/" class="in-component-navbar-links">
             <span class="material-icons in-component-navbar-icons">star</span>
             Proto Paths

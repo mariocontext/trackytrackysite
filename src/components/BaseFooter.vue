@@ -3,19 +3,17 @@
     class="w-full fixed bottom-0 border border-gray-600 border-t-2 bg-white z-10 xl:hidden "
   >
     <div class="nav-listing flex flex-row justify-around w-full">
-      <g-link to="/about" class="in-component-navbar-links">
+      <g-link to="/login" class="in-component-navbar-links">
         <span class="material-icons in-component-navbar-icons">stars</span>
-        <span>About</span>
+        <span>Login</span>
       </g-link>
-      <g-link to="/faq" class="in-component-navbar-links">
-        <span class="material-icons in-component-navbar-icons"
-          >access_time</span
-        >
-        <span>FAQ</span>
+      <g-link to="/homescreen" class="in-component-navbar-links">
+        <span class="material-icons in-component-navbar-icons">stars</span>
+        <span>Home</span>
       </g-link>
-      <g-link to="/sections/sectionone" class="in-component-navbar-links">
-        <span class="material-icons in-component-navbar-icons">settings</span>
-        <span>Section One</span>
+      <g-link to="/informational" class="in-component-navbar-links">
+        <span class="material-icons in-component-navbar-icons">stars</span>
+        <span>Info</span>
       </g-link>
     </div>
   </footer>
