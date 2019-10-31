@@ -2,7 +2,7 @@
 
 > Gridsome.js project - version 1.0.0
 
-This used to be a Nuxt project - https://github.com/mariocontext/designproto but Gridsome is more oriented towards consuming data/content from many sources.)
+This used to be a Nuxt project - https://github.com/mariocontext/designproto but Gridsome is more oriented towards consuming data/content from many sources so we've switched to that.
 
 ## Purpose
 
@@ -41,6 +41,7 @@ Go here to view the version of Node you need and some basic installation instruc
 # install dependencies in Terminal
 
 \$ `npm install --global @gridsome/cli`
+
 \$ `npm install` This installs the rest of the package dependencies.
 
 # How to compile and start gridsome
