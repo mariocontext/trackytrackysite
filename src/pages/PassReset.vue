@@ -15,7 +15,7 @@
             <form action="">
               <label for="email"
                 ><span class="block">Email</span>
-                <input type="email" name="email" class="w-64" />
+                <input type="email" id="email" name="email" class="w-64" />
               </label>
 
               <g-link class="btn my-4" to="/actual-reset">Start Reset</g-link>

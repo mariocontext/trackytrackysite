@@ -154,11 +154,13 @@
 
                 <label for="commentField">Comment</label>
                 <textarea placeholder="Hi CJ …" id="commentField"></textarea>
-                <div>
-                  <label class="label-inline" for="confirmField"
-                    >Send a copy to yourself
-                    <input type="checkbox" id="confirmField" />
-                  </label>
+
+                <!-- /* referenced from https://www.a11ymatters.com/pattern/checkbox/ */ -->
+                <div class="c-checkbox">
+                  <input class="sr-only" id="confirmation" type="checkbox" />
+                  <label class="c-checkbox__label" for="confirmation"
+                    >Custom Checkbox</label
+                  >
                 </div>
                 <input
                   class="button-primary block mt-4"

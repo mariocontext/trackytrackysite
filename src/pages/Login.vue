@@ -28,11 +28,11 @@
           <div class="sm:w-1/2 mx-auto">
             <label for="email"
               ><span class="block">Email</span>
-              <input type="email" name="email" class="w-64" />
+              <input type="email" id="email" name="email" class="w-64" />
             </label>
             <label for="password"
               ><span class="block">Password</span>
-              <input type="password" name="pass" class="w-64" />
+              <input type="password" id="pass" name="pass" class="w-64" />
             </label>
             <g-link class="mt-2 block" to="/pass-reset">
               Reset Password

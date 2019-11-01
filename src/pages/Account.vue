@@ -17,7 +17,7 @@
           <div>
             <label for="pronoun"
               ><span class="block">Preferred Pronoun</span>
-              <select name="pronoun" class="w-64">
+              <select id="pronoun" name="pronoun" class="w-64">
                 <option value="they_them">They/Them</option>
                 <option value="he_him">He/Him</option>
                 <option value="she_her">She/Her</option>
@@ -25,19 +25,24 @@
             </label>
             <label for="first_name"
               ><span class="block">First name</span>
-              <input type="text" name="first_name" class="w-64" />
+              <input
+                type="text"
+                id="first_name"
+                name="first_name"
+                class="w-64"
+              />
             </label>
             <label for="last_name"
               ><span class="block">Last name</span>
-              <input type="text" name="last_name" class="w-64" />
+              <input type="text" id="last_name" name="last_name" class="w-64" />
             </label>
             <label for="email"
               ><span class="block">Email</span>
-              <input type="email" name="email" class="w-64" />
+              <input type="email" id="email" name="email" class="w-64" />
             </label>
             <label for="password"
               ><span class="block">Change Password</span>
-              <input type="password" name="pass" class="w-64" />
+              <input type="password" id="pass" name="pass" class="w-64" />
             </label>
 
             <g-link to="/" class="btn mt-4">Save</g-link>
