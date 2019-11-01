@@ -1,6 +1,6 @@
 # Designer Prototyping Tool - Gridsome flavor
 
-> Gridsome.js project - version 1.0.0
+> Gridsome.js project
 
 This used to be a Nuxt project - https://github.com/mariocontext/designproto but Gridsome is more oriented towards consuming data/content from many sources so we've switched to that.
 
@@ -38,21 +38,21 @@ Download or clone this repository.
 Go here to view the version of Node you need and some basic installation instructions.
 [Gridsome install directions](https://gridsome.org/docs/)
 
-# install dependencies in Terminal
+## install dependencies in Terminal
 
 \$ `npm install --global @gridsome/cli`
 
 \$ `npm install` This installs the rest of the package dependencies.
 
-# How to compile and start gridsome
+## How to compile and start gridsome
 
 `gridsome develop` to start a local dev server at `http://localhost:8080`
 
-# build to generate static files in a /dist folder
+## build to generate static files in a /dist folder
 
 \$ `gridsome build`
 
-# push to Github master to have Netlify pick it up
+## Push to Github master branch to have Netlify pick it up
 
 You could also deploy to Github on a Master branch and configure Netlify to pull directly and build a static site each time the master is updated.
 

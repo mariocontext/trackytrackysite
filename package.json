@@ -1,5 +1,5 @@
 {
-  "name": "tribe-g-app",
+  "name": "proto-g-app",
   "private": true,
   "scripts": {
     "build": "gridsome build",
