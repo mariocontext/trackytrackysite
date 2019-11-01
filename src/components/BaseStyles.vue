@@ -57,9 +57,14 @@ label {
   @apply block mt-4 mb-2 font-semibold;
 }
 
+/* accessible custom checkboxes */
+
+.c-checkbox__label {
+  @apply cursor-pointer;
+}
 .c-checkbox__label:after {
   content: "";
-  @apply inline-block align-middle w-6 h-6 border-2 border-gray-500 ml-4 rounded;
+  @apply inline-block align-middle w-6 h-6 border-2 border-gray-500 ml-4 rounded cursor-pointer;
 }
 
 .c-checkbox input:focus + .c-checkbox__label {
@@ -73,6 +78,30 @@ label {
 }
 
 .c-checkbox input:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* accessible custom radios */
+
+.c-radio__label {
+  @apply cursor-pointer;
+}
+
+.c-radio__label:after {
+  content: "";
+  @apply inline-block align-middle w-6 h-6 border-2 border-gray-600 ml-2 mr-4 rounded-full cursor-pointer;
+}
+
+.c-radio input:focus + .c-radio__label {
+  outline: dashed 2px lightgrey;
+  outline-offset: 5px;
+}
+
+.c-radio input:checked + .c-radio__label:after {
+  @apply border-gray-600 border-4 bg-gray-900 rounded-full;
+}
+
+.c-radio input:focus:not(:focus-visible) {
   outline: none;
 }
 

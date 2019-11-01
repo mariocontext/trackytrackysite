@@ -114,41 +114,37 @@
                 </select>
 
                 <div class="flex flex-row w-64 justify-around">
-                  <div>
-                    <label for="huey"
-                      >Huey
-                      <input
-                        type="radio"
-                        id="huey"
-                        name="drone"
-                        value="huey"
-                        checked
-                      />
-                    </label>
+                  <div class="c-radio">
+                    <input
+                      class="sr-only"
+                      type="radio"
+                      id="huey"
+                      name="drone"
+                      value="huey"
+                    />
+                    <label class="c-radio__label" for="huey">Huey</label>
                   </div>
 
-                  <div>
-                    <label for="dewey"
-                      >Dewey
-                      <input
-                        type="radio"
-                        id="dewey"
-                        name="drone"
-                        value="dewey"
-                      />
-                    </label>
+                  <div class="c-radio">
+                    <input
+                      class="sr-only"
+                      type="radio"
+                      id="dewey"
+                      name="drone"
+                      value="dewey"
+                    />
+                    <label class="c-radio__label" for="dewey">Dewey </label>
                   </div>
 
-                  <div>
-                    <label for="louie"
-                      >Louie
-                      <input
-                        type="radio"
-                        id="louie"
-                        name="drone"
-                        value="louie"
-                      />
-                    </label>
+                  <div class="c-radio">
+                    <input
+                      class="sr-only"
+                      type="radio"
+                      id="louie"
+                      name="drone"
+                      value="louie"
+                    />
+                    <label class="c-radio__label" for="louie">Louie</label>
                   </div>
                 </div>
 
