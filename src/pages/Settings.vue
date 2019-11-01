@@ -9,7 +9,7 @@
           <div>
             <label for="language"
               ><span class="block">Preffered Language</span>
-              <select name="language" class="w-64">
+              <select name="language" id="language" class="w-64">
                 <option value="they_them">Esperanto</option>
                 <option value="he_him">English</option>
                 <option value="she_her">Spanish</option>
@@ -22,7 +22,7 @@
             </label>
             <label for="timezone"
               ><span class="block">Timezone</span>
-              <select name="timezone" class="w-64">
+              <select id="timezone" name="timezone" class="w-64">
                 <option value="PST">PST</option>
                 <option value="EST">EST</option>
                 <option value="CST">CST</option>

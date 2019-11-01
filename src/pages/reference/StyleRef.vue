@@ -114,51 +114,49 @@
                 </select>
 
                 <div class="flex flex-row w-64 justify-around">
-                  <div>
-                    <label for="huey"
-                      >Huey
-                      <input
-                        type="radio"
-                        id="huey"
-                        name="drone"
-                        value="huey"
-                        checked
-                      />
-                    </label>
+                  <div class="c-radio">
+                    <input
+                      class="sr-only"
+                      type="radio"
+                      id="huey"
+                      name="drone"
+                      value="huey"
+                    />
+                    <label class="c-radio__label" for="huey">Huey</label>
                   </div>
 
-                  <div>
-                    <label for="dewey"
-                      >Dewey
-                      <input
-                        type="radio"
-                        id="dewey"
-                        name="drone"
-                        value="dewey"
-                      />
-                    </label>
+                  <div class="c-radio">
+                    <input
+                      class="sr-only"
+                      type="radio"
+                      id="dewey"
+                      name="drone"
+                      value="dewey"
+                    />
+                    <label class="c-radio__label" for="dewey">Dewey </label>
                   </div>
 
-                  <div>
-                    <label for="louie"
-                      >Louie
-                      <input
-                        type="radio"
-                        id="louie"
-                        name="drone"
-                        value="louie"
-                      />
-                    </label>
+                  <div class="c-radio">
+                    <input
+                      class="sr-only"
+                      type="radio"
+                      id="louie"
+                      name="drone"
+                      value="louie"
+                    />
+                    <label class="c-radio__label" for="louie">Louie</label>
                   </div>
                 </div>
 
                 <label for="commentField">Comment</label>
                 <textarea placeholder="Hi CJ …" id="commentField"></textarea>
-                <div>
-                  <label class="label-inline" for="confirmField"
-                    >Send a copy to yourself
-                    <input type="checkbox" id="confirmField" />
-                  </label>
+
+                <!-- /* referenced from https://www.a11ymatters.com/pattern/checkbox/ */ -->
+                <div class="c-checkbox">
+                  <input class="sr-only" id="confirmation" type="checkbox" />
+                  <label class="c-checkbox__label" for="confirmation"
+                    >Custom Checkbox</label
+                  >
                 </div>
                 <input
                   class="button-primary block mt-4"

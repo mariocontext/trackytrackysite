@@ -35,10 +35,6 @@ h6 {
   @apply text-base font-semibold py-2;
 }
 
-label {
-  @apply block mt-4 mb-2 font-semibold;
-}
-
 main a,
 main a:link {
   @apply underline;
@@ -55,6 +51,58 @@ textarea {
 
 input[type="submit"] {
   @apply border border-gray-800 p-4 sketchy-1 inline-block p-4 cursor-pointer;
+}
+
+label {
+  @apply block mt-4 mb-2 font-semibold;
+}
+
+/* accessible custom checkboxes */
+
+.c-checkbox__label {
+  @apply cursor-pointer;
+}
+.c-checkbox__label:after {
+  content: "";
+  @apply inline-block align-middle w-6 h-6 border-2 border-gray-500 ml-4 rounded cursor-pointer;
+}
+
+.c-checkbox input:focus + .c-checkbox__label {
+  outline: dashed 2px lightgrey;
+  outline-offset: 5px;
+}
+
+.c-checkbox input:checked + .c-checkbox__label:after {
+  @apply border-gray-800;
+  background: url("/images/checkmark.svg") center/12px no-repeat;
+}
+
+.c-checkbox input:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* accessible custom radios */
+
+.c-radio__label {
+  @apply cursor-pointer;
+}
+
+.c-radio__label:after {
+  content: "";
+  @apply inline-block align-middle w-6 h-6 border-2 border-gray-600 ml-2 mr-4 rounded-full cursor-pointer;
+}
+
+.c-radio input:focus + .c-radio__label {
+  outline: dashed 2px lightgrey;
+  outline-offset: 5px;
+}
+
+.c-radio input:checked + .c-radio__label:after {
+  @apply border-gray-600 border-4 bg-gray-900 rounded-full;
+}
+
+.c-radio input:focus:not(:focus-visible) {
+  outline: none;
 }
 
 button,
