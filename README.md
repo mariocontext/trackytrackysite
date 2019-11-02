@@ -35,7 +35,7 @@ Allows us to quickly create and scale up from low fidelity to high fidelity prot
 - Oriented towards fast, hi fidelity prototyping over a final finished product
 - Provide a solid basis for that final product in order to test as soon as possible.
 
-## Tech Stack and reasons for using
+## Resources
 
 - [Vue JS](https://vuejs.org/): Kind of a mashup of Angular and React with its own approach. Single component model clearly seperates html, css and js but still is standalone. Has directives in html for quick jQuery-like interactivity and built in animation hooks.
 - [Gridsome](https://gridsome.org/): Opininated structure based on Vue that automatically creates pages for easy page routing, built in layout and theming ability, generates static html pages for easier evaluation and sharing on something like [Netlify](https://netlify.com) Also supports SASS/SCSS, Less, and other preprocessers if that's what you like. Can grab data from almost anywhere. We've mocked up how data can be grabbed from Airtable and Netfliy CMS.

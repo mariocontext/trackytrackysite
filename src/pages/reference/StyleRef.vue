@@ -206,6 +206,54 @@
               </table>
             </div>
           </section>
+
+          <section>
+            <h3>Tabs</h3>
+            <div class="c-tabs flex flex-row w-64 justify-around">
+              <div class="c-tab">
+                <input
+                  class="sr-only"
+                  type="radio"
+                  id="forest"
+                  name="tabby"
+                  value="forest"
+                  checked
+                />
+                <label class="c-tab__label" for="forest">
+                  <span class="tab__trigger">Forest</span>
+                </label>
+                <span class="tab__content">Balloon Content</span>
+              </div>
+
+              <div class="c-tab">
+                <input
+                  class="sr-only"
+                  type="radio"
+                  id="lake"
+                  name="tabby"
+                  value="lake"
+                />
+                <label class="c-tab__label" for="lake">
+                  <span class="tab__trigger">Lake</span>
+                </label>
+                <span class="tab__content">Lake Content</span>
+              </div>
+
+              <div class="c-tab">
+                <input
+                  class="sr-only"
+                  type="radio"
+                  id="balloon"
+                  name="tabby"
+                  value="balloon"
+                />
+                <label class="c-tab__label" for="balloon">
+                  <span class="tab__trigger">Balloon</span>
+                </label>
+                <span class="tab__content">Forest Content</span>
+              </div>
+            </div>
+          </section>
         </div>
       </div>
     </div>
@@ -222,7 +270,7 @@ export default {
 
 <style scoped>
 .system-container {
-  @apply mt-16 mb-8;
+  @apply mt-16 mb-32;
 }
 .system-container section {
   @apply mt-8 mb-4;

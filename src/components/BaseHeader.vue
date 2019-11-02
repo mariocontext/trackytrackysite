@@ -1,7 +1,7 @@
 <template>
   <span class="general-header-container">
     <header
-      class="sticky top-0 flex justify-between items-center p-4 border bg-white border-gray-600 border-b-2"
+      class="sticky top-0 flex justify-between items-center p-4 border bg-white border-gray-600 border-b-2 z-10"
     >
       <!--
         We may want the header to disappear when content is scrolled down and reappear when scrolled up
