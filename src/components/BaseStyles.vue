@@ -105,6 +105,44 @@ label {
   outline: none;
 }
 
+/* accessible custom toggle which is really a checkbox */
+
+.c-toggle__label {
+  @apply relative cursor-pointer;
+}
+.c-toggle__label:before {
+  content: "";
+  @apply inline-block align-middle w-12 h-6 border-2 border-gray-600 ml-2 mr-4 rounded-full cursor-pointer;
+}
+
+.c-toggle__label:after {
+  content: "";
+  @apply inline-block align-middle w-6 h-6 border-2 border-gray-600 ml-2 mr-4 rounded-full cursor-pointer absolute left-0;
+}
+
+.c-toggle input:focus + .c-toggle__label {
+  outline: dashed 2px lightgrey;
+  outline-offset: 5px;
+}
+
+.c-toggle input:checked + .c-toggle__label:before {
+  @apply border-gray-600 border-2 bg-gray-400 rounded-full;
+}
+
+.c-toggle input:checked + .c-toggle__label:after {
+  @apply bg-gray-700 border-0;
+  left: 1.5rem;
+  transition: all 0.2s ease-out;
+}
+
+.c-toggle input:not(:checked) + .c-toggle__label:after {
+  transition: all 0.2s ease-in;
+}
+
+.c-toggle input:focus:not(:focus-visible) {
+  outline: none;
+}
+
 button,
 .btn {
   @apply border border-b-2 border-gray-800 p-4 sketchy-1 inline-block cursor-pointer;
