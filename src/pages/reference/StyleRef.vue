@@ -158,6 +158,14 @@
                     >Custom Checkbox</label
                   >
                 </div>
+
+                <div class="c-toggle">
+                  <input class="sr-only" id="notifyme" type="checkbox" />
+                  <label class="c-toggle__label" for="notifyme"
+                    >Custom Toggle</label
+                  >
+                </div>
+
                 <input
                   class="button-primary block mt-4"
                   type="submit"
