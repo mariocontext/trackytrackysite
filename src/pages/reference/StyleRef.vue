@@ -206,6 +206,65 @@
               </table>
             </div>
           </section>
+          <section>
+            <h3>Tabs</h3>
+            <div class="c-tabs">
+              <input
+                class="sr-only tab-1"
+                type="radio"
+                id="forest"
+                name="tabby"
+                value="forest"
+                checked
+              />
+              <label class="c-tab__label" for="forest">
+                <span class="tab__trigger">Forest</span>
+              </label>
+
+              <input
+                class="sr-only tab-2"
+                type="radio"
+                id="lake"
+                name="tabby"
+                value="lake"
+              />
+              <label class="c-tab__label" for="lake">
+                <span class="tab__trigger">Lake</span>
+              </label>
+
+              <input
+                class="sr-only tab-3"
+                type="radio"
+                id="balloon"
+                name="tabby"
+                value="balloon"
+              />
+              <label class="c-tab__label" for="balloon">
+                <span class="tab__trigger">Balloon</span>
+              </label>
+
+              <div class="tab__content_area">
+                <span class="tab__content content-1">
+                  <p>Forest Content</p>
+                  <g-image src="/images/forest.jpg" alt="Picture of Forest" />
+                </span>
+                <span class="tab__content content-2">
+                  <p>Lake Content</p>
+                  <g-image
+                    src="/images/lake.jpg"
+                    alt="Picture of man fishing on a Lake"
+                  />
+                </span>
+                <span class="tab__content content-3">
+                  <p>Balloon Content</p>
+                  <g-image
+                    src="/images/balloon.jpg"
+                    alt="Picture of Balloon floating over foggy landscape"
+                  />
+                </span>
+              </div>
+            </div>
+          </section>
         </div>
       </div>
     </div>

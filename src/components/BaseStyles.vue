@@ -165,6 +165,51 @@ label {
   outline: none;
 }
 
+/* pure css tab styling */
+
+/* not sure how accessible these are */
+
+.c-tabs {
+  @apply relative;
+}
+
+.c-tab__label {
+  @apply inline-block cursor-pointer mr-4;
+}
+
+.tab__content {
+  display: none;
+}
+
+.c-tabs input:checked + .c-tab__label {
+  @apply border-b-2 mb-4 border-gray-800;
+}
+
+.tab__trigger {
+  @apply inline-block;
+}
+
+.c-tabs input.tab-1:checked ~ .tab__content_area .tab__content.content-1 {
+  display: block;
+}
+
+.c-tabs input.tab-2:checked ~ .tab__content_area .tab__content.content-2 {
+  display: block;
+}
+
+.c-tabs input.tab-3:checked ~ .tab__content_area .tab__content.content-3 {
+  display: block;
+}
+
+.c-tabs input:focus + .c-tab__label {
+  outline: dashed 2px lightgrey;
+  outline-offset: 5px;
+}
+
+.c-tabs input:focus:not(:focus-visible) {
+  outline: none;
+}
+
 /* videos */
 
 .videoWrapper {
