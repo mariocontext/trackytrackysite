@@ -1,12 +1,24 @@
-# Designer Prototyping Tool - Gridsome flavor
+# Designer Rapid Prototyping Tool
 
-> Gridsome.js project
+## Why
 
-This used to be a Nuxt project - https://github.com/mariocontext/designproto but Gridsome is more oriented towards consuming data/content from many sources so we've switched to that.
+After doing an app project that consisted of 400 high fidelity art boards in Sketch, I wound up asking myself why I was doing things this way. It felt like wasted work, particularly when I had to hand it off to the devs. That inspired me to look for a good html/css solution to rapidly prototype designs that could be be given feedback on various devices and also create something that could be leveraged in the final product.
+
+While Bootstrap and jQuery have been around for a while, but I wanted to use a system where I didn't have to fight the css framework and was more in line with a modern component based approach for app design.
+
+I settled on Gridsome which is built on Vue js and Tailwind which takes a utility first approach to css styling while still being able to choose reusable styles when you want to. Gridsome is all about consuming content from anywhere like airtable or netlify so we can have others easily add info. Vue has been described as a modern jQuery because you can drop it into a site or process it as a framework. I prefer the framework model because I can create what are called single file components. These components consist of an html, js and css section in the file.
+
+This seems much clearer to me as a designer than the typical React approaches to styling. You can even scope your css to a particular component and indicate if you want it to be preprocessed using SASS, LESS or something else. Vue also includes animation options and of course logic to loop through items, templated content and add interactivity easily.
+
+Gridsome will auto create links to pages you've created and apply various layouts that you create so you can easily maintain elements like headers, navs and footers.
+
+TLDR; To summarize, Vue for interactive behavior and the component model, Gridsome for data and structure, andTailwind for flexible styling/ presentation.
+
+Finally, it'll generate a static [JAM stack site](https://jamstack.org/) for you to host on places like Netlify for feedback and testing!
 
 ## Purpose
 
-We want to help designers to design directly in the medium (html,css, js) that their designs will live in thus leveraging the full visual and interactive power of the medium. Stop creating and maintaining tons of visual design files and trying to fake interactivity and animations that may or may not be executed well by developers anyway. Foster a collaborative partnership with dev teams and utilize each other's strengths when needed.
+I want to help designers to design directly in the medium (html,css, js) that their designs will live in thus leveraging the full visual and interactive power of the medium. Stop creating and maintaining tons of visual design files and trying to fake interactivity and animations that may or may not be executed well by developers anyway. Foster a collaborative partnership with dev teams and utilize each other's strengths when needed.
 
 Allows us to quickly create and scale up from low fidelity to high fidelity prototypes with a flexible and component based model using standard design patterns.
 
