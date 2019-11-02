@@ -132,6 +132,11 @@ label {
 .c-toggle input:checked + .c-toggle__label:after {
   @apply bg-gray-700 border-0;
   left: 1.5rem;
+  transition: all 0.2s ease-out;
+}
+
+.c-toggle input:not(:checked) + .c-toggle__label:after {
+  transition: all 0.2s ease-in;
 }
 
 .c-toggle input:focus:not(:focus-visible) {
