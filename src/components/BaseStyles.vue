@@ -43,6 +43,28 @@ a:hover {
   @apply text-primary;
 }
 
+button,
+.button,
+.btn {
+  @apply border border-b-2 border-gray-800 p-4 sketchy-1 inline-block cursor-pointer;
+  @apply no-underline !important;
+}
+
+button:hover,
+.btn:hover {
+  @apply bg-primary text-gray-900;
+}
+
+button:disabled {
+  @apply cursor-not-allowed opacity-50;
+}
+
+th,
+tr,
+td {
+  @apply p-4;
+}
+
 input,
 select,
 textarea {
@@ -143,26 +165,52 @@ label {
   outline: none;
 }
 
-button,
-.btn {
-  @apply border border-b-2 border-gray-800 p-4 sketchy-1 inline-block cursor-pointer;
-  @apply no-underline !important;
+/* pure css tab styling */
+
+/* not sure how accessible these are */
+
+.c-tabs {
+  @apply relative;
 }
 
-button:hover,
-.btn:hover {
-  @apply bg-primary text-gray-900;
+.c-tab__label {
+  @apply inline-block cursor-pointer mr-4;
 }
 
-button:disabled {
-  @apply cursor-not-allowed opacity-50;
+.tab__content {
+  display: none;
 }
 
-th,
-tr,
-td {
-  @apply p-4;
+.c-tabs input:checked + .c-tab__label {
+  @apply border-b-2 mb-4 border-gray-800;
 }
+
+.tab__trigger {
+  @apply inline-block;
+}
+
+.c-tabs input.tab-1:checked ~ .tab__content_area .tab__content.content-1 {
+  display: block;
+}
+
+.c-tabs input.tab-2:checked ~ .tab__content_area .tab__content.content-2 {
+  display: block;
+}
+
+.c-tabs input.tab-3:checked ~ .tab__content_area .tab__content.content-3 {
+  display: block;
+}
+
+.c-tabs input:focus + .c-tab__label {
+  outline: dashed 2px lightgrey;
+  outline-offset: 5px;
+}
+
+.c-tabs input:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* videos */
 
 .videoWrapper {
   position: relative;
