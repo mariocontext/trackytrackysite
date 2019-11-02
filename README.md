@@ -45,6 +45,8 @@ Allows us to quickly create and scale up from low fidelity to high fidelity prot
 
 ## Build Setup
 
+Just want to check it out online and not deal with all the npm setup? [Check out the Codepen](https://codesandbox.io/s/github/mariocontext/gridsomeproto/tree/master/?fontsize=14)
+
 Download or clone this repository.
 
 Go here to view the version of Node you need and some basic installation instructions.
