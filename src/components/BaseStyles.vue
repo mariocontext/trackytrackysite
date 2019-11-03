@@ -46,11 +46,12 @@ a:hover {
 button,
 .button,
 .btn {
-  @apply border border-b-2 border-gray-800 p-4 sketchy-1 inline-block cursor-pointer;
+  @apply border border-b-2 border-gray-800 px-4 py-2 sketchy-1 inline-block cursor-pointer;
   @apply no-underline !important;
 }
 
 button:hover,
+.button:hover,
 .btn:hover {
   @apply bg-primary text-gray-900;
 }
@@ -89,10 +90,12 @@ label {
   @apply inline-block align-middle w-6 h-6 border-2 border-gray-500 ml-4 rounded cursor-pointer;
 }
 
+/* showing on android mobile on tap for some reason
 .c-checkbox input:focus + .c-checkbox__label {
   outline: dashed 2px lightgrey;
   outline-offset: 5px;
 }
+*/
 
 .c-checkbox input:checked + .c-checkbox__label:after {
   @apply border-gray-800;
@@ -114,10 +117,12 @@ label {
   @apply inline-block align-middle w-6 h-6 border-2 border-gray-600 ml-2 mr-4 rounded-full cursor-pointer;
 }
 
+/* showing on android mobile on tap for some reason
 .c-radio input:focus + .c-radio__label {
   outline: dashed 2px lightgrey;
   outline-offset: 5px;
 }
+*/
 
 .c-radio input:checked + .c-radio__label:after {
   @apply border-gray-600 border-4 bg-gray-900 rounded-full;
@@ -142,10 +147,12 @@ label {
   @apply inline-block align-middle w-6 h-6 border-2 border-gray-600 ml-2 mr-4 rounded-full cursor-pointer absolute left-0;
 }
 
+/* showing on android mobile on tap for some reason
 .c-toggle input:focus + .c-toggle__label {
   outline: dashed 2px lightgrey;
   outline-offset: 5px;
 }
+*/
 
 .c-toggle input:checked + .c-toggle__label:before {
   @apply border-gray-600 border-2 bg-gray-400 rounded-full;
@@ -208,6 +215,12 @@ label {
 
 .c-tabs input:focus:not(:focus-visible) {
   outline: none;
+}
+
+/* Modal */
+
+.modal-trigger:checked + .modal-container {
+  @apply flex;
 }
 
 /* videos */

@@ -265,6 +265,95 @@
               </div>
             </div>
           </section>
+          <section>
+            <h3>Modal Example</h3>
+            <label for="modal_1" class="button">Show modal</label>
+            <input class="modal-trigger sr-only" id="modal_1" type="checkbox" />
+            <div
+              class="modal-container fixed w-full h-full top-0 left-0 flex items-center justify-center z-50 hidden"
+            >
+              <div
+                class="modal-content border-2 border-gray-500 p-4 rounded-lg mx-4 max-w-xl z-50 bg-white flex items-center justify-center relative"
+              >
+                <label
+                  for="modal_1"
+                  class="text-lg close absolute right-0 top-0 pr-4 cursor-pointer"
+                  >X</label
+                >
+                <article>
+                  <header class="relative">
+                    <h3 class="mt-0 pt-0">Yeah!</h3>
+                  </header>
+                  <section
+                    class="content h-48 overflow-y-auto border-t-2 border-b-2 mb-4"
+                  >
+                    <p>
+                      Lorem ipsum dolor amet gastropub enamel pin yr biodiesel 3
+                      wolf moon salvia. Banjo skateboard +1, single-origin
+                      coffee bicycle rights normcore air plant 8-bit. Ramps jean
+                      shorts glossier pop-up meditation, pinterest street art.
+                      Flexitarian meditation hell of lomo, asymmetrical selvage
+                      deep v squid put a bird on it hashtag typewriter kogi
+                      hexagon readymade pok pok. PBR&B selfies green juice
+                      narwhal bespoke pitchfork. Ramps drinking vinegar 3 wolf
+                      moon gluten-free, celiac pork belly shaman wolf distillery
+                      ennui pour-over roof party tumblr. Lo-fi swag franzen
+                      shoreditch.
+                    </p>
+
+                    <p>
+                      Vexillologist palo santo bushwick snackwave, iceland cloud
+                      bread skateboard disrupt celiac. XOXO farm-to-table
+                      activated charcoal pitchfork, lomo bushwick umami
+                      lumbersexual aesthetic helvetica iceland biodiesel. Art
+                      party shoreditch master cleanse, meggings helvetica viral
+                      actually retro everyday carry poke. Yr kitsch brooklyn
+                      jianbing wayfarers gastropub. Shaman fam shoreditch
+                      cardigan. Hell of readymade succulents, direct trade
+                      coloring book portland jean shorts microdosing migas irony
+                      dreamcatcher palo santo artisan 90's. Kickstarter edison
+                      bulb church-key enamel pin, succulents trust fund occupy
+                      ramps poutine health goth ethical chicharrones green
+                      juice.
+                    </p>
+                    <p>
+                      Master cleanse authentic humblebrag vinyl. Roof party
+                      polaroid four loko beard everyday carry lumbersexual
+                      kinfolk flannel mustache semiotics blue bottle. Mixtape
+                      master cleanse vinyl pabst, flannel tilde tousled hexagon
+                      bushwick. Gochujang organic selvage, poke pug affogato you
+                      probably haven't heard of them tumblr prism chartreuse meh
+                      biodiesel. Mixtape tofu selvage food truck pickled fam
+                      brunch tacos yr cardigan vice church-key waistcoat.
+                    </p>
+                    <p>
+                      Lo-fi master cleanse chicharrones narwhal gochujang wolf
+                      vinyl echo park bespoke trust fund sriracha church-key fam
+                      neutra authentic. Cray irony letterpress, godard air plant
+                      lomo actually bushwick distillery viral fingerstache.
+                      Brooklyn authentic PBR&B food truck, viral semiotics hell
+                      of blue bottle sriracha roof party celiac cloud bread
+                      green juice narwhal pinterest. Thundercats pug organic
+                      jean shorts microdosing lomo, kombucha air plant. PBR&B
+                      skateboard polaroid, iceland la croix irony jean shorts
+                      venmo godard etsy master cleanse plaid coloring book
+                      yuccie actually.
+                    </p>
+                  </section>
+                  <footer class="flex justify-between">
+                    <button class="button" href="#">See offer</button>
+                    <label for="modal_1" class="button font-normal py-8 px-4">
+                      Cancel
+                    </label>
+                  </footer>
+                </article>
+              </div>
+              <label
+                for="modal_1"
+                class="overlay fixed w-full h-full top-0 left-0 top-0 left-0 bg-gray-800 z-40 opacity-75"
+              ></label>
+            </div>
+          </section>
         </div>
       </div>
     </div>
@@ -283,7 +372,7 @@ export default {
 .system-container {
   @apply mt-16 mb-32;
 }
-.system-container section {
+.system-container > section {
   @apply mt-8 mb-4;
 }
 .system-container > section > h3 {
