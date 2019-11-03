@@ -207,7 +207,7 @@
             </div>
           </section>
           <section>
-            <h3>Tabs</h3>
+            <h3>Pure CSS Tabs</h3>
             <div class="c-tabs">
               <input
                 class="sr-only tab-1"
@@ -266,7 +266,7 @@
             </div>
           </section>
           <section>
-            <h3>Modal Example</h3>
+            <h3>Pure CSS Modal Example</h3>
             <label for="modal_1" class="button">Show modal</label>
             <input class="modal-trigger sr-only" id="modal_1" type="checkbox" />
             <div
@@ -372,11 +372,12 @@ export default {
 .system-container {
   @apply mt-16 mb-32;
 }
-.system-container > section {
+.system-container > .container > section {
   @apply mt-8 mb-4;
 }
-.system-container > section > h3 {
-  @apply border-b-2 border-gray-600 mb-8;
+
+.system-container .container > section > h3 {
+  @apply border-b-2 border-gray-600 mb-8 mt-16 max-w-lg;
 }
 </style>
 
