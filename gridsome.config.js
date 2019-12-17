@@ -5,17 +5,8 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: "G Proto App",
+  siteName: "Tracky Tracky",
   plugins: [
-    {
-      use: "@gridsome/source-airtable",
-      options: {
-        apiKey: "keyPlFLN1JpGiQb7h", // required
-        baseId: "app7kH1C7c6dP2tRv", // required
-        tableName: "proto_listing_table", // required
-        typeName: "Listings" // required
-      }
-    },
     {
       use: "@gridsome/source-filesystem",
       options: {
@@ -43,7 +34,7 @@ module.exports = {
     {
       use: `gridsome-plugin-netlify-cms`,
       options: {
-        htmlTitle: `G CMS`,
+        htmlTitle: `TT CMS`,
         publicPath: `/admin`
       }
     },

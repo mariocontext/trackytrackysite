@@ -1,5 +1,5 @@
 {
-  "name": "proto-g-app",
+  "name": "trackytrackysite",
   "private": true,
   "scripts": {
     "build": "gridsome build",
