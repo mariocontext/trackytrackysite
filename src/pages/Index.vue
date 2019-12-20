@@ -2,10 +2,42 @@
   <Layout>
     <BaseHeader screenTitle="Welcome" />
     <main class="p-4 mb-32" role="main">
-      <h1>Welcome to Tracky Tracky</h1>
-      <p>
-        This is the main page.
-      </p>
+      <h1>Welcome to Tracky Tracky<h1>
+      <p>Coordinate maintenance work</p>
+      <h2>Easily track repeated work</h2>
+    <p>Taking care of someone or something with other people?</p>
+    <ul>
+  <li>Tracky Tracky lets you easily track and coordinate work done on tasks that happen over and over.</li>
+<li>Create maintenance based tasks and set them to be auto created and repeated daily, weekly and monthly.</li>
+
+<li>Easily add repeated work to them. No need to create a separate task each time.</li>
+</ul>
+<p>For example, in the case of caregiving “help to the bathroom” can happen multiple times during a day. So can walking the dog or giving it its medicines. You could also note if the work varied a bit if there were issues.</p>
+
+<h2>Get everyone on the same page</h2>
+<p>Having mixups on tasks?</p> 
+<ul>
+  <li>Invite collaborators, share tasks and see what happened with others to reduce confusion. </li>
+  <li>Coordinate your efforts from anywhere at anytime.</li>
+  <li>No more messing around with paper logs or some hacked together online doc to find out what happened.</li>
+  <li>See the all tasks or only those that are relevant to you.</li>
+  <li>View a history of what was done and not done.</li>
+</ul>
+ 
+<h2>Why use Tracky Track and not a standard To Do or Reminder app?</h2>
+<p>We’re hyper focused on enabling people that need to do maintenance for people or things and places. We’re not oriented on single tasks to be done but tracking work on tasks that repeat themselves, particularly for groups of people with shared responsibilities and that might occur more than once a day.</p>
+
+<p>While many standard task managers have the ability to add repeatable tasks, the tasks usually only occur once per day or week. Tracky Tracky does this too but also allows you to add work to those tasks across many platforms. There’s no need to add more duplicate repeating tasks. It also makes it easier to coordinate shared efforts.</p>
+
+<h2>We’re all about helping people answer these questions:</h2>
+<ul>
+  <li>How often was it done?</li>
+  <li>How and when was it done?</li>
+  <li>Who did it?</li>
+</ul>
+
+<p>Get coordinated. Get Tracky Tracky!</p>
+
     </main>
   </Layout>
 </template>
