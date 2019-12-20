@@ -19,24 +19,6 @@
           {{ screenTitle }}
         </h1>
       </span>
-
-      <span class="header-actions">
-        <span class="inline-block pr-4">
-          <i
-            v-on:click="showaccountmenu = !showaccountmenu"
-            class="material-icons cursor-pointer"
-            ><span class="text-4xl">account_circle</span></i
-          >
-        </span>
-
-        <span v-bind:class="[contextTriggerIsActive ? 'visible' : 'invisible']">
-          <i
-            v-on:click="showcontextmenu = !showcontextmenu"
-            class="material-icons cursor-pointer"
-            ><span class="text-4xl">more_vert</span></i
-          >
-        </span>
-      </span>
     </header>
     <transition name="slide">
       <span
@@ -53,35 +35,7 @@
         <div class="nav-listing flex flex-col flex-start pt-4 mb-32 h-full">
           <g-link to="/" class="in-component-navbar-links">
             <span class="material-icons in-component-navbar-icons">star</span>
-            Proto Paths
-          </g-link>
-          <g-link to="/intro" class="in-component-navbar-links">
-            <span class="material-icons in-component-navbar-icons">star</span>
-            Intro
-          </g-link>
-          <g-link to="/login" class="in-component-navbar-links">
-            <span class="material-icons in-component-navbar-icons">star</span>
-            Login
-          </g-link>
-          <g-link to="/homescreen" class="in-component-navbar-links">
-            <span class="material-icons in-component-navbar-icons">star</span>
-            Homescreen
-          </g-link>
-          <g-link to="/category-list" class="in-component-navbar-links">
-            <span class="material-icons in-component-navbar-icons">star</span>
-            Category List
-          </g-link>
-          <g-link to="/details" class="in-component-navbar-links">
-            <span class="material-icons in-component-navbar-icons">star</span>
-            Detail
-          </g-link>
-          <g-link to="/informational" class="in-component-navbar-links">
-            <span class="material-icons in-component-navbar-icons">star</span>
-            Informational
-          </g-link>
-          <g-link to="/blog/blog" class="in-component-navbar-links">
-            <span class="material-icons in-component-navbar-icons">star</span>
-            Blog
+            Home
           </g-link>
           <g-link to="/reference/style-ref/" class="in-component-navbar-links">
             <span class="material-icons in-component-navbar-icons">star</span>
@@ -89,27 +43,6 @@
           </g-link>
         </div>
       </span>
-    </transition>
-    <transition name="dropin">
-      <div
-        v-show="showcontextmenu"
-        class="contextmenu fixed right-0 top-0 h-auto w-48 bg-white mt-12 mr-2 p-4 flex flex-col items-start shadow-lg z-20"
-      >
-        <a href="#" class="no-underline text-black p-4"> Contextual links</a>
-        <a href="#" class="no-underline text-black p-4">Contextual Link 1</a>
-        <a href="#" class="no-underline text-black p-4">Contextual Link 1</a>
-        <a href="#" class="no-underline text-black p-4">Contextual Link 1</a>
-      </div>
-    </transition>
-    <transition name="dropin">
-      <div
-        v-show="showaccountmenu"
-        class="accountmenu fixed right-0 top-0 h-auto w-48 bg-white mt-12 mr-2 p-4 flex flex-col items-start shadow-lg z-20"
-      >
-        <g-link to="/account">Account</g-link>
-        <g-link to="/settings">Settings</g-link>
-        <g-link to="/login">Logout</g-link>
-      </div>
     </transition>
   </span>
 </template>
@@ -138,19 +71,6 @@
 /* .slide-leave-active below version 2.1.8 */ {
   transform: translateX(-256px);
 }
-.dropin-enter-active,
-.dropin-leave-active {
-  transition: all 0.3s ease-in-out;
-}
-.dropin-enter,
-.dropin-leave-to {
-  transform: translateY(-400px);
-  opacity: 0;
-}
-
-.accountmenu > a {
-  @apply no-underline text-black p-4;
-}
 </style>
 
 
@@ -160,8 +80,6 @@ export default {
   data() {
     return {
       showdrawer: false,
-      showcontextmenu: false,
-      showaccountmenu: false,
       contextTriggerIsActive: true
     };
   }

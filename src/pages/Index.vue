@@ -2,11 +2,10 @@
   <Layout>
     <BaseHeader screenTitle="Welcome" />
     <main class="p-4 mb-32" role="main">
-      <h1>Prototyping Links</h1>
+      <h1>Welcome to Tracky Tracky</h1>
       <p>
-        This is the main page which leads to various prototyping paths.
+        This is the main page.
       </p>
-      <g-link to="/homescreen" class="btn">Homescreen</g-link>
     </main>
   </Layout>
 </template>
